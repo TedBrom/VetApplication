@@ -2,9 +2,7 @@ package com.Ed.Vet.two.vets;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @SpringBootApplication
@@ -19,9 +17,16 @@ public class VetsApplication
 
 	//@CrossOrigin("http://localhost:3000")
 	@GetMapping("/customRoute")
-	public String myResponse(){
+	public String myResponse()
+	{
 		AnimalList newAnimalList = new AnimalList();
 		return newAnimalList.toString();
 	}
+
+	/*
+	@PutMapping("/add")
+	@ResponseBody
+	void change(@PathVariable)
+	 */
 
 }
