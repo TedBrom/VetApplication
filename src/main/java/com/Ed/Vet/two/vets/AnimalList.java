@@ -19,7 +19,8 @@ public class AnimalList
         this.listOfAnimals.add(new Animals("Tom",5,"Buffalo"));
     }
 
-    public List<Animals> getListOfAnimals(){
+    public List<Animals> getListOfAnimals()
+    {
         return this.listOfAnimals;
     }
 
