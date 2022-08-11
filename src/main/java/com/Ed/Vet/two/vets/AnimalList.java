@@ -28,4 +28,12 @@ public class AnimalList
         String json = new Gson().toJson(listOfAnimals);
         return  json;
     }
+    public void addAnimal(Animals a)
+    {
+        this.listOfAnimals.add(a);
+    }
+    public void changeAnimal(int id, Animals a)
+    {
+        this.listOfAnimals.set(id,a);
+    }
 }
