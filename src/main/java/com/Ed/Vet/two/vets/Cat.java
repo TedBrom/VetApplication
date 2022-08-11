@@ -9,12 +9,14 @@ public class Cat extends Mammal
     }
 
     @Override
-    public String getNames() {
+    public String getNames()
+    {
         return super.getNames();
     }
 
     @Override
-    public void setNames(String names) {
+    public void setNames(String names)
+    {
         super.setNames(names);
     }
 }
