@@ -4,7 +4,7 @@ public class Cat extends Mammal
 {
     public Cat()
     {
-        super("meow");
+        super("Meow");
 
     }
 
