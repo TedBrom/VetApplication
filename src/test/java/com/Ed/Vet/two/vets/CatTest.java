@@ -28,4 +28,12 @@ public class CatTest
         assertEquals("Meow", testCat2.getTalking());
     }
 
+    @Test
+    void testGetLifeStatus()
+    {
+        Cat testCat3 = new Cat();
+        assertEquals(false, testCat3.isDead());
+    }
+
+
 }
